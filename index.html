@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cope With – Business English for Brazilians | NEXTATION Style</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Learn how to use the phrase 'cope with' in professional English – for managing stress, challenges, and difficult situations, with a Brazilian touch."
+  />
+
+  <!-- Base reset + fonts -->
+  <style>
+    /* Basic CSS Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, "Montserrat", sans-serif;
+      background: radial-gradient(circle at top, #1c1f3b 0%, #050716 45%, #02030b 100%);
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    /* NEXTATION colour tokens (from PDFs) */
+    :root {
+      --bg-main: #02030b;
+      --bg-gradient: radial-gradient(circle at top, #1c1f3b 0%, #050716 45%, #02030b 100%);
+      --card-bg: rgba(15, 18, 40, 0.92);
+      --card-soft-bg: rgba(18, 21, 50, 0.88);
+      --accent-cyan: #4ef2ff;
+      --accent-pink: #ff2f92;
+      --accent-green: #4dff9b;
+      --accent-yellow: #ffe25f;
+      --accent-purple: #aa5dff;
+      --muted: rgba(255,255,255,0.65);
+      --border-glow: rgba(120,120,255,0.45);
+      --shadow-strong: 0 0 36px rgba(130,80,255,0.6);
+      --shadow-soft: 0 0 20px rgba(0,0,0,0.65);
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 10px;
+      --transition-fast: 0.18s ease-out;
+      --transition-med: 0.28s ease-out;
+    }
+
+    /* Layout */
+    .top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #00f5ff, #ff2f92, #ffe25f, #4dff9b);
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.9);
+      z-index: 10;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 70px auto 40px auto;
+      padding: 0 18px 40px 18px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 26px;
+    }
+
+    .orb {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 30% 20%, #ffffff, transparent 60%),
+        radial-gradient(circle at 70% 80%, #00fff0, transparent 55%),
+        radial-gradient(circle at 50% 50%, #ff2f92, transparent 65%);
+      box-shadow:
+        0 0 20px rgba(0,255,255,0.7),
+        0 0 28px rgba(255,0,160,0.55);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .orb::before {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      background: conic-gradient(
+        from 0deg,
+        rgba(78, 242, 255, 0.28),
+        rgba(255, 47, 146, 0.3),
+        transparent 40%,
+        transparent 100%
+      );
+      animation: orbit 7s linear infinite;
+      mix-blend-mode: screen;
+    }
+
+    @keyframes orbit {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .header-text h1 {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      background: linear-gradient(90deg, #4ef2ff, #ff2f92);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .header-text h2 {
+      margin-top: 4px;
+      font-size: 1.5rem;
+      color: var(--accent-cyan);
+      text-shadow: 0 0 12px rgba(78, 242, 255, 0.5);
+    }
+
+    .header-text p {
+      margin-top: 6px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 520px;
+    }
+
+    /* Added the Daby Lego Disruptive Chain Method 4 Professionals line */
+    .header-text .tagline {
+      margin-top: 4px;
+      font-size: 0.85rem;
+      color: var(--accent-green);
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+
+    .pill {
+      margin-left: auto;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: linear-gradient(
+        90deg,
+        rgba(8,235,255,0.25),
+        rgba(255,0,168,0.20)
+      );
+      border: 1px solid rgba(142,255,255,0.4);
+      font-size: 0.75rem;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .pill span.badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      box-shadow: 0 0 9px rgba(77, 255, 179, 0.9);
+    }
+
+    /* Sections baseline */
+    section {
+      margin-top: 22px;
+      padding: 20px 18px 22px 18px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, rgba(13,16,40,0.98), rgba(6,8,26,0.98));
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(120,120,255,0.32);
+      position: relative;
+      overflow: hidden;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: -40px;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(87,57,255,0.35), transparent 58%);
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    section h3 {
+      position: relative;
+      z-index: 1;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+
+    section h4 {
+      position: relative;
+      z-index: 1;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    section p,
+    section ul,
+    section li {
+      position: relative;
+      z-index: 1;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.9);
+    }
+
+    section .subtitle {
+      color: var(--muted);
+      margin-bottom: 6px;
+      font-size: 0.85rem;
+    }
+
+    /* Specific spacing for Part 2 points */
+    .part2-point {
+      margin-bottom: 24px; /* This creates the desired two-line space */
+    }
+    .part2-point:last-of-type {
+      margin-bottom: 0; /* No extra space after the last point */
+    }
+
+    /* Highlighted text */
+    .highlight {
+      color: var(--accent-cyan);
+      text-shadow: 0 0 8px rgba(78, 242, 255, 0.4);
+      font-weight: 600;
+    }
+
+    .highlight-pink {
+      color: var(--accent-pink);
+      text-shadow: 0 0 8px rgba(255, 47, 146, 0.4);
+      font-weight: 600;
+    }
+
+    .highlight-green {
+      color: var(--accent-green);
+      text-shadow: 0 0 8px rgba(77, 255, 179, 0.4);
+      font-weight: 600;
+    }
+
+    .highlight-yellow {
+      color: var(--accent-yellow);
+      text-shadow: 0 0 8px rgba(255, 226, 95, 0.4);
+      font-weight: 600;
+    }
+
+    .highlight-purple {
+      color: var(--accent-purple);
+      text-shadow: 0 0 8px rgba(170, 93, 255, 0.4);
+      font-weight: 600;
+    }
+
+    /* Scenario specific styling */
+    .scenario-block {
+      background: var(--card-soft-bg);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(170, 93, 255, 0.2);
+      box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    }
+
+    .scenario-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--accent-purple);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .scenario-emoji {
+      font-size: 1.2em;
+    }
+
+    .scenario-example {
+      background: rgba(0,0,0,0.2);
+      border-left: 4px solid var(--accent-cyan);
+      padding: 10px 14px;
+      margin-top: 12px;
+      font-family: "Fira Code", monospace;
+      font-size: 0.9rem;
+      color: var(--accent-cyan);
+      border-radius: var(--radius-sm);
+    }
+
+    .scenario-context {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .scenario-pt {
+      font-size: 0.88rem;
+      color: var(--accent-green);
+      margin-top: 4px;
+      font-style: italic;
+    }
+
+    .you {
+      color: var(--accent-yellow);
+      font-weight: 600;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: var(--radius-md);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .btn-secondary {
+      background: var(--card-soft-bg);
+      color: var(--accent-cyan);
+      border: 1px solid var(--accent-cyan);
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(78, 242, 255, 0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .btn-secondary:active {
+      transform: translateY(0);
+      box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    }
+
+    /* Textarea and counters */
+    textarea {
+      width: 100%;
+      min-height: 120px;
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border-glow);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      color: #ffffff;
+      font-family: "Fira Code", monospace;
+      font-size: 0.9rem;
+      margin-top: 12px;
+      resize: vertical;
+      box-shadow: inset 0 0 8px rgba(0,0,0,0.4);
+      transition: border-color var(--transition-fast);
+    }
+
+    textarea:focus {
+      outline: none;
+      border-color: var(--accent-cyan);
+      box-shadow: inset 0 0 12px rgba(78, 242, 255, 0.2), 0 0 10px rgba(78, 242, 255, 0.3);
+    }
+
+    .char-counter {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: right;
+      margin-top: 4px;
+    }
+
+    .buttons-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+      justify-content: flex-end;
+    }
+
+    /* Feedback messages */
+    .feedback-message {
+      margin-top: 16px;
+      padding: 12px 18px;
+      border-radius: var(--radius-md);
+      font-size: 0.95rem;
+      font-weight: 500;
+      display: none; /* Hidden by default */
+      transition: all var(--transition-med);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .feedback-correct {
+      background: rgba(77, 255, 179, 0.15);
+      border: 1px solid var(--accent-green);
+      color: var(--accent-green);
+    }
+
+    .feedback-incorrect {
+      background: rgba(255, 47, 146, 0.15);
+      border: 1px solid var(--accent-pink);
+      color: var(--accent-pink);
+    }
+
+    .feedback-tip {
+      background: rgba(255, 226, 95, 0.15);
+      border: 1px solid var(--accent-yellow);
+      color: var(--accent-yellow);
+    }
+
+    /* Vocabulary section */
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .vocab-item {
+      background: var(--card-soft-bg);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      border: 1px solid rgba(78, 242, 255, 0.2);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .vocab-term {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent-cyan);
+      margin-bottom: 4px;
+    }
+
+    .vocab-def {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 4px;
+    }
+
+    .vocab-pt {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding-bottom: 20px;
+    }
+  </style>
+
+  <!-- Optional: Google Fonts for Space Grotesk (if not using system-ui) -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet"> -->
+  <!-- Optional: Google Fonts for Fira Code (if not using system-ui) -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+  <div class="top-bar"></div>
+  <main class="page">
+    <header class="header">
+      <div class="orb"></div>
+      <div class="header-text">
+        <h1>NEXTATION</h1>
+        <h2>Cope With · Business English for Brazilians</h2>
+        <p>
+          Mastering "cope with" for professional communication: managing challenges, stress, and difficult situations.
+        </p>
+        <p class="tagline">Daby Lego Disruptive Chain Method 4 Professionals</p>
+      </div>
+      <div class="pill">
+        <span class="badge-dot"></span>
+        Lesson Live
+      </div>
+    </header>
+
+    <!-- Section 1: Introduction to "Cope With" -->
+    <section id="intro">
+      <h3>Part 1 · What is "Cope With"?</h3>
+      <h4>Beyond "dar conta": managing challenges professionally</h4>
+      <p>
+        In English, the phrase <span class="highlight">"cope with"</span> is a powerful tool for describing how you
+        manage or deal with difficult situations, stress, or challenges. It implies handling something
+        successfully, even if it's tough. For Brazilians, it's a great alternative to more informal
+        expressions like "dar conta" or "se virar" in a business context.
+      </p>
+      <p>
+        It's about demonstrating resilience and capability, which is highly valued in professional environments.
+        Using "cope with" shows you're not just facing a problem, but actively managing it.
+      </p>
+      <button class="btn-secondary" onclick="playCopeWith()">
+        🔊 Listen 'cope with'
+      </button>
+    </section>
+
+    <!-- Section 2: When & how to use "Cope With" -->
+    <section id="when-to-use">
+      <h3>Part 2 · When & how to use it</h3>
+      <h4>Professional contexts where Brazilians need this phrase</h4>
+
+      <div class="part2-point">
+        <p>
+          In Brazil, we often say things directly: “estamos com um problema”, “deu ruim”, “tivemos uma dificuldade”.
+          While directness has its place, in English business communication, especially when discussing challenges,
+          it’s often more professional to use phrases that convey management and resilience.
+        </p>
+      </div>
+
+      <div class="part2-point">
+        <p>
+          <span class="highlight-yellow">"Cope with"</span> is your go-to phrase when you want to express that you,
+          your team, or your company are successfully managing a difficult situation, even under pressure.
+          It’s about handling, enduring, and overcoming.
+        </p>
+      </div>
+
+      <div class="part2-point">
+        <p>
+          Think of it as the difference between just stating a problem and stating your *ability to handle* that problem.
+          It shifts the focus from the issue itself to your capacity to navigate it.
+        </p>
+      </div>
+
+      <div class="part2-point">
+        <p>
+          <span class="highlight-green">Use "cope with" when you want to:</span>
+        </p>
+        <ul>
+          <li>
+            <span class="highlight-green">Show resilience:</span> "We are coping well with the increased workload."
+          </li>
+          <li>
+            <span class="highlight-green">Address challenges:</span> "How are you coping with the new project demands?"
+          </li>
+          <li>
+            <span class="highlight-green">Manage stress:</span> "Employees need strategies to cope with workplace stress."
+          </li>
+          <li>
+            <span class="highlight-green">Handle difficult changes:</span> "The team is coping with the recent organizational changes."
+          </li>
+        </ul>
+      </div>
+
+      <div class="part2-point">
+        <p>
+          <span class="highlight-pink">Why it matters for Brazilians:</span>
+          It helps you sound more proactive and less reactive. Instead of just saying "we have a problem,"
+          you're saying "we are managing the problem." This is a subtle but powerful shift in corporate English.
+        </p>
+      </div>
+
+      <div class="part2-point">
+        <p>
+          <span class="highlight-purple">Example:</span>
+          <br>
+          <span class="you">Informal (Brazilian style):</span> "A gente está com muita pressão por causa do prazo."
+          <br>
+          <span class="you">Professional (English with "cope with"):</span> "We are coping with significant pressure due to the tight deadline."
+        </p>
+      </div>
+
+      <p>
+        Mostra capacidade de gestão e resiliência de forma elegante – funciona para desafios e pressões!
+      </p>
+    </section>
+
+    <!-- Section 3: Scenarios & Examples -->
+    <section id="scenarios">
+      <h3>Part 3 · Scenarios & Examples</h3>
+      <h4>See "cope with" in action in real business situations</h4>
+
+      <div class="scenario-block">
+        <article>
+          <div class="scenario-title">
+            <span class="scenario-emoji">⏰</span> Tight Deadlines
+          </div>
+          <p class="scenario-example">
+            <span class="you">Project Manager:</span><br />
+            “Our team is <span class="highlight">coping with</span> a very tight deadline for the new product launch, but we are on track.”
+          </p>
+          <p class="scenario-context">
+            Use "cope with" to show that despite pressure, work is progressing.
+          </p>
+          <p class="scenario-pt">
+            “Nossa equipe está lidando com um prazo apertado.”
+          </p>
+        </article>
+      </div>
+
+      <div class="scenario-block">
+        <article>
+          <div class="scenario-title">
+            <span class="scenario-emoji">📉</span> Market Volatility
+          </div>
+          <p class="scenario-example">
+            <span class="you">CEO:</span><br />
+            “The company has successfully <span class="highlight">coped with</span> the recent market volatility by diversifying our investments.”
+          </p>
+          <p class="scenario-context">
+            Demonstrate strategic management in uncertain economic conditions.
+          </p>
+          <p class="scenario-pt">
+            “A empresa conseguiu lidar com a recente volatilidade do mercado.”
+          </p>
+        </article>
+      </div>
+
+      <div class="scenario-block">
+        <article>
+          <div class="scenario-title">
+            <span class="scenario-emoji">🧑‍💻</span> Increased Workload
+          </div>
+          <p class="scenario-example">
+            <span class="you">Team Lead:</span><br />
+            “How are you all <span class="highlight">coping with</span> the increased workload after the new client acquisition?”
+          </p>
+          <p class="scenario-context">
+            Ask about team well-being and capacity to manage higher demands.
+          </p>
+          <p class="scenario-pt">
+            “Como vocês estão lidando com o aumento da carga de trabalho?”
+          </p>
+        </article>
+      </div>
+
+      <div class="scenario-block">
+        <article>
+          <div class="scenario-title">
+            <span class="scenario-emoji">🔄</span> Organizational Change
+          </div>
+          <p class="scenario-example">
+            <span class="you">HR Director:</span><br />
+            “We are providing support to help employees <span class="highlight">cope with</span> the new organizational structure.”
+          </p>
+          <p class="scenario-context">
+            Explain efforts to assist staff through transitions.
+          </p>
+          <p class="scenario-pt">
+            “Estamos oferecendo suporte para ajudar os funcionários a lidar com a nova estrutura.”
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Section 4: Participative exercises -->
+    <section id="exercises">
+      <h3>Part 4 · Participative practice</h3>
+      <h4>Write, speak, and feel comfortable using “cope with”</h4>
+
+      <!-- Exercise 1: Email writing -->
+      <div class="exercise-block">
+        <div class="exercise-title">Exercise 1 · Email about managing a difficult situation</div>
+        <p class="exercise-instruction">
+          Imagine you are a manager in a Brazilian company. Your team is facing unexpected technical issues
+          that are delaying a project. Write a short email (4–6 lines) to your director, using
+          <span class="highlight">“cope with”</span> at least once to describe how your team is handling it.
+        </p>
+        <p class="exercise-instruction" style="font-size:0.88rem; color:var(--muted);">
+          Hint in Portuguese: você pode começar com “We are currently coping with…” ou
+          “Our team is coping well with…”.
+        </p>
+        <textarea id="ex1" placeholder="Type your email here in English..."></textarea>
+        <div class="char-counter" id="ex1-counter">0 characters</div>
+        <div class="buttons-row">
+          <button class="btn-primary" type="button" onclick="checkExercise1()">
+            Check my email
+          </button>
+        </div>
+        <div id="ex1-feedback" class="feedback-message"></div>
+      </div>
+
+      <!-- Exercise 2: Meetings phrases -->
+      <div class="exercise-block">
+        <div class="exercise-title">Exercise 2 · Phrases for meetings</div>
+        <p class="exercise-instruction">
+          Below are four Brazilian-style situations. For each, say out loud a sentence with “cope with”.
+          If you want, write it down to fix it in your memory.
+        </p>
+        <ul style="margin-top:6px; padding-left:18px;">
+          <li>1. Sua equipe está sob muita pressão por um novo lançamento.</li>
+          <li>2. A empresa precisa se adaptar a novas regulamentações do governo.</li>
+          <li>3. Você está gerenciando vários projetos complexos ao mesmo tempo.</li>
+          <li>4. Um colega está com dificuldades para lidar com o estresse do trabalho.</li>
+        </ul>
+        <textarea id="ex2" placeholder="Type your phrases here in English..."></textarea>
+        <div class="char-counter" id="ex2-counter">0 characters</div>
+        <div class="buttons-row">
+          <button class="btn-primary" type="button" onclick="checkExercise2()">
+            Check my phrases
+          </button>
+        </div>
+        <div id="ex2-feedback" class="feedback-message"></div>
+      </div>
+    </section>
+
+    <!-- Section 5: Vocabulary Reference -->
+    <section id="vocabulary">
+      <h3>Part 5 · Vocabulary Reference</h3>
+      <h4>Key terms for discussing challenges and resilience</h4>
+
+      <div class="vocab-grid">
+        <div class="vocab-item">
+          <div class="vocab-term">resilience</div>
+          <div class="vocab-def">
+            The ability to recover quickly from difficulties; toughness.
+          </div>
+          <div class="vocab-pt">
+            resiliência.
+          </div>
+        </div>
+
+        <div class="vocab-item">
+          <div class="vocab-term">workload</div>
+          <div class="vocab-def">
+            The amount of work to be done by someone or something.
+          </div>
+          <div class="vocab-pt">
+            carga de trabalho.
+          </div>
+        </div>
+
+        <div class="vocab-item">
+          <div class="vocab-term">market volatility</div>
+          <div class="vocab-def">
+            The rate at which the price of a security or market index changes.
+          </div>
+          <div class="vocab-pt">
+            volatilidade do mercado.
+          </div>
+        </div>
+
+        <div class="vocab-item">
+          <div class="vocab-term">diversifying investments</div>
+          <div class="vocab-def">
+            Spreading investments across various assets to reduce risk.
+          </div>
+          <div class="vocab-pt">
+            diversificar investimentos.
+          </div>
+        </div>
+
+        <div class="vocab-item">
+          <div class="vocab-term">client acquisition</div>
+          <div class="vocab-def">
+            The process of gaining new customers for a business.
+          </div>
+          <div class="vocab-pt">
+            aquisição de clientes.
+          </div>
+        </div>
+
+        <div class="vocab-item">
+          <div class="vocab-term">organizational structure</div>
+          <div class="vocab-def">
+            The hierarchy of a company, defining how roles, power, and responsibilities are assigned.
+          </div>
+          <div class="vocab-pt">
+            estrutura organizacional.
+          </div>
+        </div>
+
+        <div class="vocab-item">
+          <div class="vocab-term">technical issues</div>
+          <div class="vocab-def">
+            Problems related to technology or systems.
+          </div>
+          <div class="vocab-pt">
+            problemas técnicos.
+          </div>
+        </div>
+
+        <div class="vocab-item">
+          <div class="vocab-term">new regulations</div>
+          <div class="vocab-def">
+            New rules or laws, often from a government body.
+          </div>
+          <div class="vocab-pt">
+            novas regulamentações.
+          </div>
+        </div>
+
+        <div class="vocab-item">
+          <div class="vocab-term">workplace stress</div>
+          <div class="vocab-def">
+            Mental or emotional strain or tension resulting from one's job.
+          </div>
+          <div class="vocab-pt">
+            estresse no trabalho.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Created for Brazilian professionals to feel confident using
+      <span class="highlight">“cope with”</span> in real business English.
+    </footer>
+  </main>
+
+  <!-- Small JS for sound + char counters + answer checking -->
+  <script>
+    // Function to play "cope with" sound
+    function playCopeWith() {
+      if (!("speechSynthesis" in window)) {
+        alert("SpeechSynthesis is not supported in this browser.");
+        return;
+      }
+      const utter = new SpeechSynthesisUtterance("cope with");
+      utter.lang = "en-US";
+      speechSynthesis.speak(utter);
+    }
+
+    // Function to set up character counters for textareas
+    function setupCounter(textareaId, counterId) {
+      const ta = document.getElementById(textareaId);
+      const counter = document.getElementById(counterId);
+      if (!ta || !counter) return;
+      ta.addEventListener("input", () => {
+        counter.textContent = ta.value.length + " characters";
+      });
+    }
+
+    // Call setupCounter for both exercise textareas
+    setupCounter("ex1", "ex1-counter");
+    setupCounter("ex2", "ex2-counter");
+
+    // Function to display feedback
+    function showFeedback(elementId, message, type) {
+      const feedbackDiv = document.getElementById(elementId);
+      feedbackDiv.textContent = message;
+      feedbackDiv.className = `feedback-message feedback-${type}`; // Apply styling based on type
+      feedbackDiv.style.display = "block"; // Make it visible
+    }
+
+    // --- Exercise 1: Email about managing a difficult situation ---
+    function checkExercise1() {
+      const emailText = document.getElementById("ex1").value.toLowerCase();
+      const feedbackId = "ex1-feedback";
+
+      const hasCopeWith = emailText.includes("cope with") || emailText.includes("coping with") || emailText.includes("coped with");
+      const hasContext = emailText.includes("issue") || emailText.includes("problem") || emailText.includes("challenge") || emailText.includes("delay") || emailText.includes("stress");
+      const isLongEnough = emailText.length > 50;
+
+      if (hasCopeWith && hasContext && isLongEnough) {
+        showFeedback(
+          feedbackId,
+          "Excellent! You've used 'cope with' effectively in a business context. Your email sounds professional and resilient. Keep up the great work!",
+          "correct"
+        );
+      } else if (hasCopeWith && isLongEnough) {
+        showFeedback(
+          feedbackId,
+          "Good start! You've used 'cope with'. Now, try to make sure the context clearly describes a difficult situation, stress, or challenge.",
+          "tip"
+        );
+      } else if (!hasCopeWith && isLongEnough) {
+        showFeedback(
+          feedbackId,
+          "Not quite there. Remember to include 'cope with' (or its forms) in your email. It's key for professional communication about managing difficulties!",
+          "incorrect"
+        );
+      } else {
+        showFeedback(
+          feedbackId,
+          "Please write a bit more. Your email should be at least 4–6 lines long to fully describe the situation and use 'cope with' naturally.",
+          "tip"
+        );
+      }
+    }
+
+    // --- Exercise 2: Phrases for meetings ---
+    function checkExercise2() {
+      const phrasesText = document.getElementById("ex2").value.toLowerCase();
+      const feedbackId = "ex2-feedback";
+
+      const hasCopeWith = phrasesText.includes("cope with") || phrasesText.includes("coping with") || phrasesText.includes("coped with");
+      const hasPressure = phrasesText.includes("pressure") && phrasesText.includes("launch");
+      const hasRegulations = phrasesText.includes("regulations") && phrasesText.includes("adapt");
+      const hasMultipleProjects = phrasesText.includes("multiple") && phrasesText.includes("projects") && phrasesText.includes("complex");
+      const hasWorkStress = phrasesText.includes("stress") && phrasesText.includes("work") && phrasesText.includes("difficulties");
+
+      let correctCount = 0;
+      let tips = [];
+
+      if (hasPressure && hasCopeWith) correctCount++;
+      else if (hasPressure) tips.push("For 'equipe sob pressão', try: 'Our team is coping with a lot of pressure for the new launch.'");
+
+      if (hasRegulations && hasCopeWith) correctCount++;
+      else if (hasRegulations) tips.push("For 'adaptar a novas regulamentações', consider: 'The company needs to cope with new government regulations.'");
+
+      if (hasMultipleProjects && hasCopeWith) correctCount++;
+      else if (hasMultipleProjects) tips.push("For 'gerenciando vários projetos complexos', use: 'I am coping with several complex projects simultaneously.'");
+
+      if (hasWorkStress && hasCopeWith) correctCount++;
+      else if (hasWorkStress) tips.push("For 'dificuldades com estresse do trabalho', try: 'My colleague is having difficulties coping with workplace stress.'");
+
+      if (!hasCopeWith) {
+        showFeedback(
+          feedbackId,
+          "Make sure to use 'cope with' (or its forms) in your sentences for each scenario!",
+          "incorrect"
+        );
+        return;
+      }
+
+      if (correctCount === 4) {
+        showFeedback(
+          feedbackId,
+          "Fantástico! You've captured all four scenarios perfectly using 'cope with'. Your understanding is excellent!",
+          "correct"
+        );
+      } else if (correctCount > 0) {
+        showFeedback(
+          feedbackId,
+          `Very good! You've correctly addressed ${correctCount} out of 4 scenarios. Here are some tips for the others: ${tips.join(" ")}`,
+          "tip"
+        );
+      } else {
+        showFeedback(
+          feedbackId,
+          "Keep trying! Remember to use 'cope with' for each situation. Focus on managing or dealing with the challenge. " + tips.join(" "),
+          "incorrect"
+        );
+      }
+    }
+  </script>
+</body>
+</html>
